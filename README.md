@@ -15,9 +15,11 @@ But first, we need to learn about memory.
 ## Memory
 
 In case you forgot, memory is the part of the computer where we store
-data we are working with. It is separate from the hard drive because we
-can read and write to it more quickly. In order to get this speed boost,
-memory can't remember data without a steady supply of electricity.
+data we are actively working with. It is separate from the hard drive
+because we can read and write to it more quickly. In order to achieve this speed
+boost, memory sacrifices the ability to remember data without a steady supply
+of electricity. If the power shuts off, the data goes away, so that is
+why we "save" our work to the hard drive.
 
 Computers interface with memory using numerical addresses. Typically,
 the hexadecimal number system is used because it maps really nicely to
