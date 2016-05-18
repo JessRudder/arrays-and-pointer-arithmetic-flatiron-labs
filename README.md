@@ -84,4 +84,7 @@ element in the array.
 Here's a good resource from The University of Maryland that even has
 pictures: [Pointer Arithmetic](https://www.cs.umd.edu/class/sum2003/cmsc311/Notes/BitOp/Figs/arr2.png)
 
+## Doing stuff
 
+Now it's time to do stuff! Look at the source code in arrays.c and
+follow the instructions.
