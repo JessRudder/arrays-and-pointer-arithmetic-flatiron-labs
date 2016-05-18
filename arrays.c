@@ -40,15 +40,15 @@ int main() {
   hello_memory_addresses();
 
   if(array_length() == 100) {
-    printf("array_length() passed!");
+    printf("array_length() passed!\n");
   } else {
-    printf("array_length() failed!");
+    printf("array_length() failed!\n");
   }
 
   if(pointer_arithmetic(56) == 0 && pointer_arithmetic(92) == 4) {
-    printf("pointer_arithmetic() passed!");
+    printf("pointer_arithmetic() passed!\n");
   } else {
-    printf("pointer_arithmetic() failed!");
+    printf("pointer_arithmetic() failed!\n");
   }
 
   return 0;
