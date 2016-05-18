@@ -30,8 +30,6 @@ binary data.
 An array is a contiguous portion of memory that we allocate for our
 program to use.
 
-![say what](https://cdn.meme.am/instances/500x/51876815.jpg)
-
 Contiguous? That's not an ancient Greek philosopher, we are saying that
 the memory used for the array can be referenced by a series of consecutive
 memory addresses, i.e. 0x7fff5038c2c0, 0x7fff5038c2c1, 0x7fff5038c2c2,
