@@ -23,20 +23,19 @@ why we "save" our work to the hard drive.
 
 Computers interface with memory using numerical addresses. Typically,
 the hexadecimal number system is used because it maps really nicely to
-binary data. If you didn't know what that meant before, you certainly
-don't now, so here's some learning.
+binary data.
 
-## Binary and Hex
+## Creating an array
 
-To store data, computers use (really) tiny things called transistors that can
-be in 1 of 2 states. This is convenient because we can represent any
-number in the universe using a series of transistors by using the 2
-different states to represent the two values in the binary number
-system, 1 and 0. The binary number system (0,1), is exactly equivalent to our
-decimal number system (0,1,2,3,4,5,6,7,8,9), it just takes more digits to
-represent any given number. The advantage is that is simpler to
-manufacture physical hardware to work with 2 states rather than 10
-states. These are also referred to as "base 2" or
-"base 10". You can have a number system with "base" anything. In fact,
-[there have been computers built that had 3 states](https://en.wikipedia.org/wiki/Ternary_computer),
-so it used the base 3 number system, or "ternary".
+An array is a contiguous portion of memory that we allocate for our
+program to use.
+
+![say what](https://cdn.meme.am/instances/500x/51876815.jpg)
+
+Contiguous? That's not an ancient Greek philosopher, we are saying that
+the memory used for the array can be referenced by a series of consecutive
+memory addresses, i.e. 0x7fff5038c2c0, 0x7fff5038c2c1, 0x7fff5038c2c2,
+etc.
+
+Allocate? That's not a Mexican beer, that's a word used to describe the
+process of reserving a portion of memory of a given size for use by the program.
