@@ -37,3 +37,38 @@ etc.
 
 Allocate? That's not a Mexican beer, that's a word used to describe the
 process of reserving a portion of memory of a given size for use by the program.
+
+## Using an array
+
+At this point we're all used to using an array. In C we peform those
+operations like this: create an array `int array[10]`, read from an
+array, `array[3]`, write to an array `array[4] = 8`, and loop over an
+array:
+
+```c
+for(int i = 0; i < array_length; i++) {
+  printf("%d\n", array[i]);
+}
+```
+
+## How does this stuff actually work though?
+
+In C, you only know 3 things about an array, how much
+space it takes up, where it starts, and what data type it contains. Recall
+`int array[5];`. This code allocates contiguous memory that is the size of 5
+integers and stores the memory address of the array in the variable `array`.
+
+Say we access the element at index 2, `array[2]`. Ruby's not the only
+language that's nice to developers, this is actually syntactic sugar!
+
+It is equivalent to: `*(array + 2)`. `array` is the beginning of the array,
+`2` is how far to jump ahead in memory (C knows the array contains
+integers, so if your ints are 32 bits, then it will automatically add
+2 * 32 bits), and then finally `*` means "get the value at the following
+memory address".
+
+Congratulations, you now know pointer arithmetic!
+
+And now, we can say with confidence that accessing an array element is
+O(1) because no matter what array we have an what element we access, it
+will always be a single addition operation and a memory look up.
